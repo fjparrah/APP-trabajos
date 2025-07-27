@@ -1,0 +1,17 @@
+# Python / Django
+backend/venv/
+*.pyc
+__pycache__/
+
+# Node / React
+frontend/node_modules/
+frontend/dist/
+
+#venv mal hecho
+venv
+
+# General
+.DS_Store
+.env
+*.env
+*.sqlite3

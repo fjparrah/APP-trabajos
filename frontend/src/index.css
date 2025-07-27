@@ -1,0 +1,118 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(44, 55, 66, 0.94);
+  background-color: #fafdff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* === GLOBAL BADGES (útiles en DataGrid, tablas, etc.) === */
+.badge {
+  display: inline-block;
+  padding: 4px 13px;
+  border-radius: 11px;
+  font-size: 0.97rem;
+  font-weight: 500;
+}
+.badge-success { background: #19dbab; color: #fff; }
+.badge-warning { background: #fcb026; color: #fff; }
+
+/* === LINKS === */
+a {
+  font-weight: 500;
+  color: #208cff;
+  text-decoration: none;
+  transition: color 0.18s;
+}
+a:hover {
+  color: #1366d6;
+}
+
+/* === BASE === */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #fafdff;
+}
+
+/* === HEADINGS === */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* === BUTTONS === */
+button, .MuiButton-root {
+  border-radius: 8px !important;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #208cff;
+  color: #fff;
+  cursor: pointer;
+  transition: border-color 0.18s, background 0.16s;
+  box-shadow: 0 2px 8px #208cff18;
+}
+button:hover, .MuiButton-root:hover {
+  background-color: #1366d6 !important;
+  border-color: #208cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 3px auto -webkit-focus-ring-color;
+}
+
+/* === DATA GRID === */
+.MuiDataGrid-root {
+  border-radius: 12px;
+  font-size: 1rem;
+  background: #fff;
+  border: none;
+  box-shadow: 0 4px 18px #2150890a;
+}
+.MuiDataGrid-columnHeaders {
+  background: #e9f2ff;
+  color: #156bdb;
+  font-weight: 600;
+  font-size: 1.07rem;
+}
+.MuiDataGrid-cell {
+  font-size: 1rem;
+}
+.MuiDataGrid-footerContainer {
+  background: #f5faff;
+}
+.MuiDataGrid-row.Mui-selected {
+  background: #d5eafe !important;
+}
+
+/* === SCROLLBAR SUAVE (opcional, puedes quitar si no quieres) === */
+::-webkit-scrollbar {
+  width: 9px;
+  background: #e8eaf0;
+}
+::-webkit-scrollbar-thumb {
+  background: #b4c5de;
+  border-radius: 7px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #fafdff;
+  }
+  a:hover {
+    color: #208cff;
+  }
+  button, .MuiButton-root {
+    background-color: #208cff;
+  }
+}

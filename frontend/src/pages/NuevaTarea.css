@@ -1,0 +1,103 @@
+.nueva-tarea-container {
+  max-width: 740px;
+  margin: 34px auto;
+  background: #fafdff;
+  border-radius: 22px;
+  box-shadow: 0 6px 42px #16356a1a;
+  padding: 40px 42px 30px 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nueva-tarea-form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 18px;
+}
+
+.nueva-tarea-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #193c56;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.nueva-tarea-form input[type="text"],
+.nueva-tarea-form select,
+.nueva-tarea-form textarea {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1.2px solid #b4cced;
+  margin-top: 5px;
+  font-size: 1rem;
+  background: #f4faff;
+  transition: border 0.16s;
+}
+
+.nueva-tarea-form input[type="file"] {
+  margin-top: 8px;
+}
+
+.nueva-tarea-form select[multiple],
+.nueva-tarea-form textarea {
+  min-height: 46px;
+  height: 68px;
+  resize: vertical;
+}
+
+.nueva-tarea-form .form-error {
+  grid-column: 1 / span 2;
+  color: #e11d48;
+  background: #ffe5ea;
+  padding: 7px 10px;
+  border-radius: 7px;
+  margin: 0;
+}
+
+.nueva-tarea-form .form-success {
+  grid-column: 1 / span 2;
+  color: #14b881;
+  background: #e6f7f3;
+  padding: 7px 10px;
+  border-radius: 7px;
+  margin: 0;
+}
+
+.nueva-tarea-form .crear-btn {
+  grid-column: 1 / span 2;
+  margin-top: 16px;
+  width: 100%;
+  background: linear-gradient(90deg,#1a78e6,#38c6f4);
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 11px;
+  padding: 13px 0;
+  cursor: pointer;
+  transition: background 0.13s;
+}
+.nueva-tarea-form .crear-btn:disabled { opacity: 0.7; }
+
+@media (max-width: 820px) {
+  .nueva-tarea-container {
+    padding: 24px 10px 14px 10px;
+    max-width: 98vw;
+  }
+  .nueva-tarea-form {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+  .nueva-tarea-form .crear-btn,
+  .nueva-tarea-form .form-error,
+  .nueva-tarea-form .form-success {
+    grid-column: auto;
+  }
+}
+
+
